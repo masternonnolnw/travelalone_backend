@@ -8,9 +8,6 @@ import { TripModule } from './trip/trip.module';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({
-      envFilePath: ['.env.local', '.env.production'],
-    }),
     TypeOrmModule.forRoot({
       type: 'mysql',
       // host: process.env.HOST,
